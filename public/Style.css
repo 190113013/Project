@@ -1,0 +1,806 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+#log {
+	position: absolute;
+	top: 70px;
+	left: 60px;
+}
+
+#phone {
+	position: absolute;
+	top: 60px;
+	left: 400px;
+	border-radius: 50%;
+}
+
+#pnum {
+	position: absolute;
+	top: 70px;
+	left: 465px;
+	font-size: 25px;
+}
+
+#email {
+	position: absolute;
+	top: 60px;
+	left: 720px;
+	border-radius: 50%;
+}
+
+#adress {
+	position: absolute;
+	top: 70px;
+	left: 800px;
+	font-size: 25px;
+}
+
+.menubtn {
+    background-color: #0d98ba;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.dropped_menu {
+    position: relative;
+    display: inline-block;
+}
+
+.dropped_menu_child {
+    background-color: #0d98ba;
+    min-width: 200px;
+    display: none;
+}
+
+.dropped_menu_child a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.dropped_menu:hover .dropped_menu_child {
+    display: inline-block;
+}
+
+.bar{
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.6);
+    z-index: 2;
+    opacity: 0;
+}
+
+.content{
+    background-color: white;
+    height: 230px;
+    width: 300px;
+    position: relative;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+input{
+    display: block;
+    width: 45%;
+    padding: 8px;
+    margin: 20px;
+}
+
+#username, #password {
+	margin: 7px auto;
+}
+
+#click {
+	position: absolute;
+	right: 70px;
+}
+
+#click2 {
+	position: absolute;
+	right: 145px;
+}
+
+.close{
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+.bn {
+	position: absolute;
+	bottom: 620px;
+	left: 1170px;
+	top: 7px;
+}
+
+.prof {
+	position: absolute;
+	top: 5px;
+	right: 120px;
+	margin: 0;
+	background-color: deepskyblue;
+	border-radius: 5px;
+	z-index: 1;
+	display: none;
+}
+
+#img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: inline;
+}
+
+#name {
+	margin: 0;
+	display: inline;
+	color: white;
+}
+
+.bar2 {
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.6);
+    z-index: 2;
+    opacity: 0;
+}
+
+.content2 {
+    background-color: white;
+    height: 230px;
+    width: 300px;
+    position: relative;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+#user_name, #user_surname, #user_phone {
+	margin: 6px auto;
+}
+
+#click3 {
+	position: absolute;
+	left: 120px;
+}
+
+.bn2 {
+	position: absolute;
+	top: 75px;
+	left: 1100px;
+}
+
+#slider {
+	width: 1170px;
+	height: 284px;
+	border: 7px solid black;
+	margin: 150px auto;
+	overflow: hidden;
+}
+
+#stripe {
+	width: 2950px;
+	position: relative;
+	left: 0;
+	transition: all ease 1s;
+}
+
+#stripe img {
+	float: left;
+}
+
+#stripe::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#sl_left {
+	position: absolute;
+	top: 480px;
+	right: 50px;
+}
+
+#pr {
+	position: absolute;
+	left: 450px;
+	bottom: 50px;
+	font-size: 45px;
+}
+
+.kunteynir {
+	display: flex;
+	justify-content: space-between;
+}
+
+.polosa {
+	position: relative;
+	width: 1100px;
+	padding-bottom: 70px;
+	padding-top: 70px;
+}
+
+.polosa h2 {
+	position: absolute;
+	color: white;
+	left: 350px;
+    bottom: 200px;
+}
+
+.polosa #f {
+	position: absolute;
+	color: white;
+	left: 350px;
+    bottom: 160px;
+    font-size: 20px;
+}
+
+.polosa #s {
+	position: absolute;
+	color: white;
+	left: 350px;
+    bottom: 130px;
+    font-size: 20px;
+}
+
+#fon {
+  position: relative;
+}
+
+#gz {
+  position: absolute;
+  bottom: 100px;
+  left: 70px;
+}
+
+#header {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+#intro {
+	font-size: 20px;
+	font-family: system-ui;
+	padding-bottom: 10px;
+}
+
+#mid {
+	font-size: 20px;
+	font-family: system-ui;
+	padding-bottom: 20px;
+}
+
+#cup {
+	position: absolute;
+	left: 900px;
+	bottom: -1240px;
+}
+
+#truck {
+	position: absolute;
+	left: 495px;
+	bottom: -1240px;
+}
+
+#list {
+	position: absolute;
+	left: 50px;
+	bottom: -1240px;
+}
+
+#t3 {
+	position: absolute;
+	left: 180px;
+	bottom: -1200px;
+	font-size: 18px;
+}
+
+#t2 {
+	position: absolute;
+	left: 630px;
+	bottom: -1200px;
+	font-size: 18px;
+}
+
+#t1 {
+	position: absolute;
+	left: 1050px;
+	bottom: -1210px;
+	font-size: 18px;
+}
+
+.frame {
+	border: 7px solid red;
+	padding: 140px 20px;
+	border-radius: 10px;
+}
+
+#mid2 {
+	padding-top: 20px;
+	font-size: 20px;
+	font-family: system-ui;
+	padding-bottom: 20px;
+}
+
+#mid3 {
+	font-size: 20px;
+	font-family: system-ui;
+	padding-bottom: 20px;
+}
+
+#end {
+	font-size: 20px;
+	font-family: system-ui;
+	margin-bottom: 100px;
+}
+
+#find {
+	position: absolute;
+	bottom: -1680px;
+	font-size: 50px;
+}
+
+#googleMap {
+	position: fixed;
+	width: 800px;
+	height: 500px;
+}
+
+#stores {
+	position: absolute;
+	left: 800px;
+	bottom: -2184px;
+	width: 460px;
+	height: 500px;
+	background-color: #0d98ba;
+}
+
+#adds {
+	position: absolute;
+	top: 130px;
+	left: 40px;
+	color: white;
+	font-family: sans-serif;
+	font-size: 19px;
+	letter-spacing: 0.5px;
+	margin-top: 2px;
+	margin-left: 40px;
+}
+
+
+#storages {
+	color: white;
+	font-size: 30px;
+	font-family: sans-serif;
+	text-align: center;
+	margin-top: 50px;
+	letter-spacing: 0.5px;
+}
+
+#u2 {
+	margin-top: 20px;
+}
+
+#u3 {
+	margin-top: 20px;
+}
+
+.bottom {
+	width: 100%;
+	height: 75px;
+	background-color: #858D91;
+	margin-top: 100px;
+	color: white;
+	letter-spacing: 0.5px;
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+#sh {
+	position: absolute;
+	left: 400px;
+	bottom: -2355px;
+}
+
+@media (max-width: 700px) {
+
+  #log {
+	position: absolute;
+	top: 70px;
+	left: 10px;
+  }
+
+  #phone {
+	position: absolute;
+	top: 68px;
+	left: 170px;
+	border-radius: 50%;
+}
+
+#pnum {
+	position: absolute;
+	top: 72px;
+	left: 205px;
+	font-size: 15px;
+}
+
+#email {
+	position: absolute;
+	top: 62px;
+	left: 333px;
+	border-radius: 50%;
+}
+
+#adress {
+	position: absolute;
+	top: 70px;
+	left: 381px;
+	font-size: 16px;
+  }
+
+.bn {
+	position: absolute;
+	bottom: 620px;
+	left: 570px;
+	top: 65px;
+}
+
+.prof {
+	position: absolute;
+	top: 5px;
+	right: 120px;
+	margin: 0;
+	background-color: deepskyblue;
+	border-radius: 5px;
+	z-index: 1;
+	display: none;
+  }
+
+.bn2 {
+	position: absolute;
+	top: 122px;
+	left: 10px;
+  }
+
+#pr {
+	position: absolute;
+	left: 240px;
+	bottom: -10px;
+	font-size: 30px;
+ }
+
+#fon {
+  position: relative;
+  width: 720px;
+ }
+
+ #gz {
+  position: absolute;
+  bottom: 140px;
+  left: 70px;
+  width: 10%;
+}
+
+ #cup {
+	position: absolute;
+	left: 325px;
+	bottom: -1730px;
+}
+
+#truck {
+	position: absolute;
+	left: 190px;
+	bottom: -1640px;
+}
+
+#list {
+	position: absolute;
+	left: 6px;
+	bottom: -1560px;
+} 
+
+#t3 {
+	position: absolute;
+	left: 85px;
+	bottom: -1550px;
+	font-size: 18px;
+}
+
+#t2 {
+	position: absolute;
+	left: 271px;
+	bottom: -1635px;
+	font-size: 18px;
+}
+
+#t1 {
+	position: absolute;
+	left: 410px;
+	bottom: -1735px;
+	font-size: 18px;
+}
+
+#slider {
+	width: 670px;
+	height: 284px;
+	border: 7px solid black;
+	margin: 150px auto;
+	overflow: hidden;
+ }
+
+ .kunteynir {
+ 	padding-right: 100px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.polosa h2 {
+	position: absolute;
+	color: white;
+	left: 180px;
+    bottom: 200px;
+}
+
+.polosa #f {
+	position: absolute;
+	color: white;
+	left: 180px;
+    bottom: 160px;
+    font-size: 20px;
+}
+
+.polosa #s {
+	position: absolute;
+	color: white;
+	left: 180px;
+    bottom: 130px;
+    font-size: 20px;
+}
+
+.polosa {
+	position: relative;
+	left: -60px;
+	width: 950px;
+	padding-bottom: 70px;
+	padding-top: 70px;
+}
+
+#find {
+	position: absolute;
+	bottom: -2230px;
+	font-size: 40px;
+}
+
+#googleMap {
+	width: 350px;
+	height: 400px;
+}
+
+#storages {
+	color: white;
+	font-size: 15px;
+	font-family: sans-serif;
+	text-align: center;
+	margin-top: 30px;
+	letter-spacing: 0.5px;
+}
+
+#stores {
+	position: absolute;
+	left: 350px;
+	bottom: -2650px;
+	width: 260px;
+	height: 400px;
+	background-color: #0d98ba;
+}
+
+#adds {
+	position: absolute;
+	top: 100px;
+	left: 40px;
+	color: white;
+	font-family: sans-serif;
+	font-size: 12px;
+	letter-spacing: 0.5px;
+	margin-left: 10px;
+}
+
+
+#sh {
+	color: white;
+	position: absolute;
+	left: 100px;
+	bottom: -2830px;
+}
+
+}
+
+@media (max-width: 1000px) {
+	#log {
+	position: absolute;
+	top: 70px;
+	left: 10px;
+  }
+
+  #phone {
+	position: absolute;
+	top: 68px;
+	left: 250px;
+	border-radius: 50%;
+}
+
+#pnum {
+	position: absolute;
+	top: 72px;
+	left: 305px;
+	font-size: 25px;
+}
+
+#email {
+	position: absolute;
+	top: 62px;
+	left: 520px;
+	border-radius: 50%;
+}
+
+#adress {
+	position: absolute;
+	top: 70px;
+	left: 585px;
+	font-size: 25px;
+  }
+
+.bn {
+	position: absolute;
+	bottom: 620px;
+	left: 870px;
+	top: 7px;
+}
+
+.prof {
+	position: absolute;
+	top: 5px;
+	right: 120px;
+	margin: 0;
+	background-color: deepskyblue;
+	border-radius: 5px;
+	z-index: 1;
+  }
+
+.bn2 {
+	position: absolute;
+	top: 70px;
+	left: 830px;
+  }
+
+#pr {
+	position: absolute;
+	left: 290px;
+	bottom: -10px;
+	font-size: 45px;
+ }
+
+#fon {
+  position: relative;
+  width: 980px;
+ }
+
+ #cup {
+	position: absolute;
+	left: 655px;
+	bottom: -1380px;
+}
+
+#truck {
+	position: absolute;
+	left: 350px;
+	bottom: -1380px;
+}
+
+#list {
+	position: absolute;
+	left: 5px;
+	bottom: -1380px;
+} 
+
+#t3 {
+	position: absolute;
+	left: 100px;
+	bottom: -1350px;
+	font-size: 18px;
+}
+
+#t2 {
+	position: absolute;
+	left: 457px;
+	bottom: -1350px;
+	font-size: 18px;
+}
+
+#t1 {
+	position: absolute;
+	left: 770px;
+	bottom: -1370px;
+	font-size: 18px;
+}
+
+#slider {
+	width: 968px;
+	height: 284px;
+	border: 7px solid black;
+	margin: 150px auto;
+	overflow: hidden;
+ }
+
+#find {
+	position: absolute;
+	bottom: -1930px;
+	font-size: 40px;
+}
+
+#googleMap {
+	width: 650px;
+	height: 500px;
+}
+
+#storages {
+	color: white;
+	font-size: 20px;
+	font-family: sans-serif;
+	text-align: center;
+	margin-top: 30px;
+	letter-spacing: 0.5px;
+}
+
+#stores {
+	position: absolute;
+	left: 650px;
+	bottom: -2439px;
+	width: 320px;
+	height: 500px;
+	background-color: #0d98ba;
+}
+
+#adds {
+	position: absolute;
+	top: 100px;
+	left: 40px;
+	color: white;
+	font-family: sans-serif;
+	font-size: 16px;
+	letter-spacing: 0.5px;
+	margin-left: 10px;
+}
+
+
+#sh {
+	color: white;
+	position: absolute;
+	left: 220px;
+	bottom: -2608px;
+}
+
+
+}
